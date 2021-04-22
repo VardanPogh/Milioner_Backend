@@ -15,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('question/{session_id}/{point}', 'QuestionController@index');
+Route::get('get_first_question', 'QuestionController@index');
+
+Route::get('check_answer/{session}/{question}/{answer}', 'QuestionController@check_answer');
 
